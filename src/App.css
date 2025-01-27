@@ -1,0 +1,11 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    box-sizing: border-box;
+}
+.Section-1{
+    height: 100vh;
+    background: linear-gradient(45deg,  #1A237E, #448AFF);
+
+}
