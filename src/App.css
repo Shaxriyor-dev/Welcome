@@ -1,11 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Giga:wght@100..900&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     color: #fff;
     box-sizing: border-box;
+    font-family: "Lexend Giga", serif;
 }
 .Section-1{
+    gap: 70px;
     height: 100vh;
-    background: linear-gradient(45deg,  #1A237E, #448AFF);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(45deg,  #030306, #103678);
+}
+.text{
+    gap: 10px;
+    font-size: 20px;
+    display: flex;
+    padding: 15px;
+    align-items: center;
+    font-family: "Lexend Giga", serif;
+}
+.ll{
+    font-size: 30px;
+}
+.ff{
+    font-size: 20px;
+}
 
+.text-lg{
+    width: 550px;
+    padding: 7px;
+    font-size: 12px;
+    line-height: 30px;
+    font-family: "Lexend Giga", serif;
+}
+.hero{
+    gap: 20px;
+    display: flex;
+    padding: 15px;
+    align-items: baseline;
+}
+
+.text-ls{
+    font-size: 14px;
+    font-weight: 700;
+    padding: 7px;
+}
+
+.box-input{
+    height: 600px;
+    width: 450px;
+    padding: 20px;
+    background: dimgrey;
+    border-radius: 10px;
+    border: solid 1px #0091ff;
+    background: #fff;
 }
