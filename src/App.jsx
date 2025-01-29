@@ -1,16 +1,26 @@
 import "./App.css";
 import * as React from "react";
+import Backdrop from "@mui/material/Backdrop";
+import CircularProgress from "@mui/material/CircularProgress";
+import { FaFacebook } from "react-icons/fa6";
+import { FcGoogle } from "react-icons/fc";
 import Box from "@mui/material/Box";
-import Button from '@mui/material/Button';
+import Button from "@mui/material/Button";
 import TextField from "@mui/material/TextField";
 import { GrCentos } from "react-icons/gr";
 import { TbSettingsStar } from "react-icons/tb";
 import { FcBullish } from "react-icons/fc";
-import { GrLike } from "react-icons/gr";
 import { CiCloudSun } from "react-icons/ci";
 import { CiTablets1 } from "react-icons/ci";
 
 function App() {
+  const [open, setOpen] = React.useState(false);
+  const handleClose = () => {
+    setOpen(false);
+  };
+  const handleOpen = () => {
+    setOpen(true);
+  };
   return (
     <>
       <section className="Section-1">
@@ -104,9 +114,72 @@ function App() {
               </Box>
             </div>
           </Box>
-          <Button sx={{marginLeft :'30%' ,display : 'flex' , justifyContent : 'center' , alignItems : 'center'}} variant="contained" disableElevation>
-            Disable elevation
+          <Button
+            sx={{
+              background: "#0091ff",
+              width: "385px",
+              height: "50px",
+              marginLeft: "2%",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+            }}
+            variant="contained"
+            disableElevation
+          >
+            Login
           </Button>
+          <div className="flex-ason">
+            <p className="leks">
+              Don't have an account?{" "}
+              <a
+                className="link-login"
+                href="https://mui.com/material-ui/getting-started/templates/sign-in-side"
+              >
+                Sign up
+              </a>
+            </p>
+            <div className="divs">
+              <div className="ffff"></div>
+              <p className="se">or</p>
+              <div className="ffff"></div>
+            </div>
+            <div className="huuk">
+              <Button onClick={handleOpen}>
+                {" "}
+                <FcGoogle />
+                Sign in with Google
+              </Button>
+              <Backdrop
+                sx={(theme) => ({
+                  color: "#fff",
+                  fontSize: '20px',
+                  background : '#0091ff',
+                  fontFamily : '"Lexend Giga", serif',
+                  zIndex: theme.zIndex.drawer + 1,
+                })}
+                open={open}
+                onClick={handleClose}
+              >
+                <CircularProgress color="inherit" />
+              </Backdrop>
+              <Button onClick={handleOpen}>
+                {" "}
+                <FcGoogle />
+                Sign in with Facebook
+              </Button>
+              <Backdrop
+                sx={(theme) => ({
+                  color: "#fff",
+                  zIndex: theme.zIndex.drawer + 1,
+                })}
+                open={open}
+                onClick={handleClose}
+              >
+                <CircularProgress color="inherit" />
+              </Backdrop>
+            </div>
+          </div>
         </div>
       </section>
     </>

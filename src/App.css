@@ -53,9 +53,49 @@
 .box-input{
     height: 600px;
     width: 450px;
-    padding: 20px;
+    padding: 25px;
     background: dimgrey;
     border-radius: 10px;
     border: solid 1px #0091ff;
     background: #fff;
+}
+.text-k{
+    padding: 15px 7px;
+    color: #000;
+    font-size: 25px;
+    font-weight: 600;
+    font-family: "Lexend Giga", serif;
+}
+.leks{
+    color: #202020;
+    font-size: 14px;
+    padding: 20px 50px;
+}
+.link-login{
+    color: #000;
+    font-size: 14px;
+    font-family: "Lexend Giga", serif;
+}
+.divs{
+    gap: 10px;
+    color: #000;
+    display: flex;
+    margin-top: 10px;
+    justify-content: center;
+}
+.ffff{
+    height: 1px;
+    width: 170px;
+    background: #000;
+}
+.se{
+    color: #000;
+    margin-top: -11px;
+}
+.huuk{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    align-items: center;
+    justify-content: center;
 }
